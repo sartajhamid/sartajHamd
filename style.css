@@ -1,4 +1,3 @@
-/* Base Styles and CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -240,6 +239,7 @@ nav {
     border: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
     overflow: hidden;
+    padding-top: 100px;
 }
 
 .b2::after {
@@ -353,7 +353,8 @@ nav {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
     color: #30edf4;
     position: relative;
     display: inline-block;
@@ -516,7 +517,7 @@ nav {
 .education-work-section {
     padding: 5rem 0;
     max-width: 1400px;
-    margin: 0 auto;
+    margin-top: -100px;
 }
 
 .education-work-container {
@@ -619,6 +620,7 @@ nav {
     padding: 5rem 0;
     max-width: 1400px;
     margin: 0 auto;
+    margin-top: -100px;
 }
 
 .blog-content {
@@ -662,7 +664,8 @@ nav {
 .hire {
     padding: 5rem 0;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: -100px auto -100px auto;
+    
 }
 
 form {
@@ -721,42 +724,6 @@ textarea {
 .btn-submit:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(48, 237, 244, 0.2);
-}
-
-/* Social Media Section */
-.social_media {
-    display: grid;
-    grid-template-columns: 40% 15% 15% 15% 15%;
-    background-color: rgb(15, 15, 15);
-    border-radius: 30px;
-    padding: 2rem;
-    max-width: 1400px;
-    margin: 4rem auto;
-}
-
-.media {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.social h2 {
-    color: #30edf4;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.media a {
-    font-size: 2.5rem;
-    color: #fff;
-    transition: all 0.3s ease;
-}
-
-.media a:hover {
-    color: #30edf4;
-    transform: translateY(-5px) scale(1.1);
 }
 
 /* About Section */
@@ -865,6 +832,7 @@ footer p {
         grid-row: 2/3;
         grid-column: 1;
         border-radius: 30px;
+
     }
     
     .b3 {
@@ -946,7 +914,7 @@ footer p {
     
     .b2 h1 {
         font-size: 2rem;
-    }
+    }s
     
     .expertise {
         padding: 2rem;
@@ -970,6 +938,19 @@ footer p {
         width: 150px;
         height: 150px;
     }
+    @media screen and (max-width: 400px) {
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            margin-top: 250px;
+        }
+        .skills-section{
+            margin-top: 200px;
+            
+        }
+        .blogs{
+            margin-top: -100px;
+        }
     
     .b1 h2 {
         font-size: 1.5rem;
@@ -984,7 +965,7 @@ footer p {
     }
     
     .cta-buttons {
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
     }
     
@@ -1020,6 +1001,25 @@ footer p {
         width: 100%;
     }
 }
+@media screen and (min-width: 250px) and (max-width: 390px) {
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        margin-top:500px;
+    }
+    .skills-section{
+        margin-top: 430px;
+        
+    }
+    .education-work-section{
+        margin-top: -130px;
+    }
+    .hire{
+        margin-top: -100px;
+    }
+    .about-section{
+        margin-top: -100px;
+    }
 
 /* JavaScript-enabled classes */
 .nav-active {
@@ -1074,3 +1074,4 @@ footer p {
         transform: translateY(-5px) scale(1.1);
     }
 }
+}}
