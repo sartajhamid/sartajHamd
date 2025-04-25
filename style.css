@@ -983,6 +983,10 @@ footer p {
     
     .education-work-container {
         padding: 1.5rem;
+        
+        display: flex;
+        flex-direction: column;
+        
     }
     
     .work-section, .education-section {
@@ -1005,14 +1009,16 @@ footer p {
     .profile-image {
         width: 150px;
         height: 150px;
-        margin-top:500px;
+        margin-top:450px;
     }
     .skills-section{
         margin-top: 430px;
         
     }
     .education-work-section{
-        margin-top: -130px;
+        margin-top: -130px;        
+        display: flex;
+        flex-direction: column;
     }
     .hire{
         margin-top: -100px;
