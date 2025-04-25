@@ -938,9 +938,16 @@ footer p {
         width: 150px;
         height: 150px;
     }
+    .about-section{
+        margin-top: -100px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
     .education-work-container{
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     @media screen and (max-width: 400px) {
         .profile-image {
@@ -954,6 +961,12 @@ footer p {
         }
         .blogs{
             margin-top: -100px;
+        }
+        .about-section{
+            margin-top: -100px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
         }
     
     .b1 h2 {
@@ -1014,6 +1027,7 @@ footer p {
         width: 150px;
         height: 150px;
         margin-top:450px;
+        
     }
     .skills-section{
         margin-top: 430px;
@@ -1023,12 +1037,16 @@ footer p {
         margin-top: -130px;        
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     .hire{
         margin-top: -100px;
     }
     .about-section{
         margin-top: -100px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
 /* JavaScript-enabled classes */
